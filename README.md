@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 To configure your local environment for this project, follow these steps:
 
-## Step 1: Create `.env.local` File
+## Step 1: Create `.env.` File
 
 Create a file named `.env` in the root directory of the project. This file will store important environment variables.
 
