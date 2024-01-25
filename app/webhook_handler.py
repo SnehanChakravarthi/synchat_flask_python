@@ -5,6 +5,8 @@ import hmac
 from functools import wraps
 import json
 
+from app.actions.process_payload import process_payload
+
 
 # Load environment variables
 verification_token = os.getenv("VERIFICATION_TOKEN")
@@ -97,4 +99,5 @@ def get_webhook():
 def post_webhook():
     payload = request.get_json()
     print(json.dumps(payload, indent=2))
+    process_payload(payload)
     return Response(status=200)

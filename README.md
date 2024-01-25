@@ -5,8 +5,8 @@
 It's a good practice to use a virtual environment for this project. This keeps dependencies for this project separate and organized. To create and activate a virtual environment, run the following commands in your terminal:
 
 ```bash
-python -m venv myenv
-source myenv/bin/activate  # On Unix or MacOS
+python -m venv .myenv
+source .myenv/bin/activate  # On Unix or MacOS
 myenv\Scripts\activate  # On Windows
 ```
 
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 To configure your local environment for this project, follow these steps:
 
-## Step 1: Create `.env.` File
+## Step 1: Create `.env` File
 
 Create a file named `.env` in the root directory of the project. This file will store important environment variables.
 
