@@ -25,3 +25,8 @@ def configure_routes(app):
         view_func=check_env_variables(validate_webhook_payload(post_webhook)),
         methods=["POST"],
     )
+
+    app.add_url_rule(
+        "/api",
+        view_func=lambda: "Hello, World!",
+    )
