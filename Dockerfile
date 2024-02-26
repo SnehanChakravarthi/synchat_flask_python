@@ -47,7 +47,7 @@ COPY --chown=appuser:appuser . .
 RUN mkdir -p /app/app/actions/media && chown -R appuser:appuser /app/app/actions/media
 
 
-ENV ACCESS_TOKEN=EAADplHaVy4gBO6xrcpa2NhP1FRZBFNFNksEUI7W1zvZBN6d0AlbdWjixWRraiBLd8bNL8vW4fK4LcK4k1ZAR5AdHrl1FlKUnrgL7vXTdmwcFHC0Oh2NP3Am9ejYBc6GfeoHAfSCIHWuN1gnG6zMBEmWAHZCjckvYfO8nW9zPBqL8peGZAxEVUgWrkNVWttjMzWQhBfHAX2hehRVMxPerea8F9crWz2x6wcVhruR4ZD PHONE_NUMBER_ID=217444478114678 VERIFICATION_TOKEN=bitbotbitbot APP_SECRET=b0356fc9c3a1dc8a8ffe9fa01df6b74f OPENAI_API_KEY=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
+ENV ACCESS_TOKEN
 
 # Expose the port that the application listens on.
 EXPOSE 3000
